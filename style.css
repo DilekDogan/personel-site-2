@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 95px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px ;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;/* esnek ogeleri ortaya hizalar*/
+    align-items: center ;
+    margin: 100px 0;
+    
+}
+.col-1{
+    flex-basis: 40%;/*%40 boyunca*/
+    position: relative;
+    margin-left: 40px;
+    border: 5px solid #CC99FF;
+    padding: 150px;
+    border-radius: 30px 0 30px 0;
+}
+span{
+    color: #CC99FF;
+}
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100px;
+    font-size: 20px;
+}
+
+.vl{
+    border-left: 6px solid #6eb3ec;
+    height: 430px;
+    
+}
+/*------------------------------------------------------------*/
+.col-2{
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center; 
+  margin-right: -150px ; 
+}
+.col-2 .header{
+width: 80%;
+}
+.social-icons img{
+    height: 25px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-icons{
+    text-align: center;
+}
+/*------------------------------------------------------------*/
+
+@media only screen and (min-width:700px) {
+    nav ul{
+        width: 25%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:#CC99FF;
+       
+    }
+    .menu-icon{
+        display: block;
+        margin-top: -5px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .logo{
+        margin-top: -5px;
+    }
+}
+@media only screen and (max-width:700px){
+    .menu-icon{
+        display: block;
+        margin-top: -5px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+   .col-1{
+    border: none;
+   }
+   nav ul li a{
+    color:#CC99FF;
+   
+}
+nav ul li {
+    margin-right: 65px;
+    margin-bottom: 5px;
+   
+}
+
+}
